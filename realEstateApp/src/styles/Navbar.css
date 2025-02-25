@@ -1,0 +1,76 @@
+/* Navbar General Styles */
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(26, 35, 126, 0.9); /* Koyu mavi ve hafif saydam */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Navbar İçerik */
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.navbar-logo img {
+  padding-top: 10px;
+  height: 120px;
+}
+
+/* Menü */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  color: #fbc02d; /* Altın sarısı */
+}
+
+/* Mobil Uyum */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-menu li a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+}
